@@ -1,0 +1,11 @@
+.users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px;
+
+  button {
+    max-width: 150px;
+    cursor: pointer;
+  }
+}
