@@ -19,6 +19,11 @@ const routes: Routes = [
       import('./user2/user2.module').then((n) => n.User2Module),
   },
   {
+    path: 'user3',
+    loadChildren: () =>
+      import('./user3/user3.module').then((n) => n.User3Module),
+  },
+  {
     path: '**',
     component: NotFoundComponent,
   },
