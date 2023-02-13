@@ -1,0 +1,9 @@
+<ng-container>
+  <app-loading color="black" *ngIf="loading; else noLoading"></app-loading>
+</ng-container>
+<ng-template #noLoading>
+  <div class="container">
+    <button [routerLink]="empty">Back</button>
+    <h1>Me ❤</h1>
+  </div>
+</ng-template>
