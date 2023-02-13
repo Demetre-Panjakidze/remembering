@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './user3.component.html',
   styleUrls: ['./user3.component.scss'],
 })
-export class User3Component {}
+export class User3Component {
+  loading: boolean = true;
+  ngOnInit() {
+    setTimeout(() => {
+      this.loading = !this.loading;
+    }, 2000);
+  }
+}
