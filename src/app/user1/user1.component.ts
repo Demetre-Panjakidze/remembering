@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class User1Component implements OnInit {
   loading: boolean = true;
+  empty: string = '';
   ngOnInit() {
     setTimeout(() => {
       this.loading = !this.loading;
